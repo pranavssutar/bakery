@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Glory Muffin</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="BakeryItem.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function sub(){
+            var num=document.getElementById("t1").value;
+            num-=1;
+            document.getElementById("t1").value=num;
+        }
+        function add(){
+            var num=document.getElementById("t1").value;
+            var no=parseInt(num);
+            no=no+1;
+            document.getElementById("t1").value=no;
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand navhead" href="#">
+               Passion Bakery & Cakes &nbsp;
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#shop">Shop<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Brownies.html">BROWINES</a></li>
+                  <li><a href="Breads.html">BREADS</a></li>
+                  <li><a href="Muffins.html">MUFFINS</a></li>
+                  <li><a href="Cookies.html">COOKIES</a></li>
+                </ul>
+              </li>
+              <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <button onclick="document.getElementById('id01').style.display='block'" class="btn navbar-btn btn-success" >Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="#" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="/Resource/BakeryLogo.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br><br>
+            <a class="link">Forgot Password ?</a>
+            <br><br>
+            <button type="submit" id="b" style="background-color: #04AA6D;">Login</button>
+
+            <br>
+            <label id="l">
+              <input type="checkbox" checked="unchecked" name="remember"> Remember me
+            </label>
+            <br>
+            <button type="button" id="b" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+
+    <div class="container c1">
+        <img src="/Resource/Blueberry_Muffin.jpg" height="300px" width="100%">
+    </div>
+
+    <div class="container-fluid c2">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Morning_glory_muffin.jpg" height="400px" width="50%">
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 c4">
+            <h1>Morning Glory Muffin</h1>
+            <img src="/Resource/veg.png" width="30px" height="30px">
+            <br>
+            <h2>Ingredients</h2>
+            <ul type="disk">
+                <li>Whole Wheat Flour (75%)</li>
+                <li>Sugar</li>
+                <li>All Purpose Flour (25%)</li>
+                <li>Flour</li>
+                <li>Coconut Flakes</li>
+                <li>Walnuts</li>
+                <li>Oil</li>
+            </ul>
+            <hr>
+            <h2 style="text-decoration: none;">300 Rupees</h2>
+            <p>Package:- &nbsp;
+                <button type="button" class="btn btn-md btn-danger" disabled>Pack Of 4</button>
+            </p>
+            <p>Wt. Per Piece in Grams :- 
+                <button type="button" class="btn btn-danger" disabled >100</button>
+            </p>
+            <button type="button" class="btn btn-md"  onclick="sub()">-</button>
+            <input type="text" size="2" id="t1" name="t1" value="1" style="text-align: center;">
+            <button type="button" class="btn btn-md" onclick="add()">+</button>
+            <button type="button" class="btn btn-warning">
+                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Add to Cart
+            </button>
+            <hr>
+            <h3>Allergens:</h3>
+            <p><span> Our   products   are   manufactured   in   a   facility   which   also   uses   Dairy,   Eggs  & Nuts</span></p>
+            <h3>Delivery:</h3>
+            <p><span>All   the   products   are   made   fresh   and   dispatched   within   2-3   working   days</span> </p>
+            <h3>Storage:</h3>
+            <p><span> All   our   products   are   sensitive   to   heat,   humidity   and   temperature.   We   request   you   to   refrigerate / freeze   them   as   soon   as   you   receive   it.   To   consume   them   fresh   and   warm,   just   thaw   on   the   kitchen   counter   for   a   while,   and   heat   it   for   a   few   seconds   in   a   microwave   or   in   a   steamer.</span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+input[type=text], input[type=password] {
+    width: 40%;
+    margin-left:10px;
+    margin-top:8px;
+    padding:5px 5px;
+    font-family: cursive;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+label{
+    font-family: cursive;
+}
+
+#b{
+    color: white;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-left:5px;
+    padding:10px 18px;
+    font-family: cursive !important;
+    font-weight: bolder;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: 50%;
+    margin-top:5px;
+    padding: 10px 18px;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 20px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 45%;
+    height: 120px;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  .link{
+    margin-top: 5px !important;
+    font-family: cursive;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    margin-left: 25%;
+    width: 50%; 
+    height: 95%; 
+    overflow: auto; 
+    padding-top: 10px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin:5px 5px 10px 5px;
+    border: 1px solid #888;
+    width: 95%;
+    opacity: 1.0 !important;
+    height: 95%;
+    border-radius: 15px;
+    padding:5px 5px 5px 5px;
+  }
+  
+
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+  .navhead{
+    color:black !important;
+    font-family: cursive;
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+@media screen and (max-width:1200px){
+    input[type=text], input[type=password] {
+        width: 40%;
+        font-size: 12px;
+    }
+    label{
+        width: 10%;
+        font-size: 15px;
+    }
+    #l{
+      width: 80% !important;
+    }
+    #b{
+        width: 50%;
+     }
+     .cancelbtn {
+        width: 50%;
+     }
+     .modal-content{
+      height: auto;
+    }
+    .modal{
+      height: auto;
+    }
+}
+
+@media only screen and (max-width:883px){
+    input[type=text], input[type=password] {
+        width:35%;
+        font-size: 10px;
+    }
+    #b{
+      width: 42%;
+      margin-left: 2%;
+    }
+    .cancelbtn{
+      width: 42%;
+      margin-left: 2%;
+    }
+    .modal-content{
+      height: auto;
+    }
+    .modal{
+      height: auto;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .cancelbtn {
+        width: 80%;
+        margin-left: 10%;
+     }
+     #b{
+        width: 80%;
+        margin-left: 10%;
+     }
+     input[type=text], input[type=password] {
+        width: 70%;
+        font-size: 10px;
+    }
+    label{
+        font-size: 12px;
+        width: 20%;
+    }
+    .modal-content{
+      height: auto;
+    }
+    .modal{
+      height: auto;
+    }
+}
+
+
+  @media screen and (max-width: 560px) {
+    .modal{
+      width: 77%;
+      margin-left: 12%;
+      height: auto;
+    }
+    .modal-content{
+      height: auto;
+    }
+    .cancelbtn {
+       width: 80%;
+    }
+   #b{
+        width: 80%;
+        font-family: cursive;
+    }
+    label{
+        font-size: 10px;
+        width: 20%;
+    }
+    input[type=text], input[type=password] {
+        width: 70%;
+        font-size: 8px;
+    }
+    .link{
+        font-size: 10px;
+        font-family: cursive;
+    }
+}
+
+.d4{
+  background-color:indianred;
+}
+
+.nav a{
+  color:black !important;
+  font-family: cursive !important;
+}

@@ -1,0 +1,112 @@
+.cen{
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 25px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:navy;
+}
+
+
+div span{
+    background-color: cornsilk;
+}
+
+
+.jumbotron h1{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.jumbotron p{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 15px;
+    color:gray;
+    transition-duration: 2s;
+}
+
+.c1{
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+    padding: 0px;
+    margin-top:20px;
+}
+
+.c1 img{
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.jumbotron:hover{
+    box-shadow: 4px 2px 4px 4px cyan;
+}
+
+body{
+    background-image: url("/Resource/background2.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat:repeat;
+    background-color: rgba(255, 255, 255, 0.486);
+    background-blend-mode:darken;
+
+}
+
+@media only screen and (max-width:1480px){
+    .cen{
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 25px;
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:navy;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .cen{
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 25px;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:navy;
+    }
+}
+
+@media screen and  (max-width:768px){
+    .c1{
+        margin-left: 8%;
+    }
+    .container-fluid img{
+        height: 300px;
+    }
+    .jumbotron{
+        height: auto;
+        margin-top: 20px;
+    }
+    .jumbotron h1{
+        font-size: 20px;
+    }
+    .jumbotron p{
+        font-size: 15px;
+    }
+    .cen{
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: 25px;
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color:navy;
+    }
+}

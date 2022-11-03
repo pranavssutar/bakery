@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand navhead" href="#">
+               Passion Bakery & Cakes &nbsp;
+            </a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#shop">Shop<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Brownies.html">BROWINES</a></li>
+                  <li><a href="Breads.html">BREADS</a></li>
+                  <li><a href="Muffins.html">MUFFINS</a></li>
+                  <li><a href="Cookies.html">COOKIES</a></li>
+                </ul>
+              </li>
+              <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <button onclick="document.getElementById('id01').style.display='block'" class="btn navbar-btn btn-success" >Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="#" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="/Resource/BakeryLogo.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br><br>
+            <a class="link">Forgot Password ?</a>
+            <br><br>
+            <button type="submit" id="b" style="background-color: #04AA6D;">Login</button>
+
+            <br>
+            <label id="l">
+              <input type="checkbox" checked="unchecked" name="remember"> Remember me
+            </label>
+            <br>
+            <button type="button" id="b" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+
+      <br><br><br><br>
+    <div class="container c1">
+        <img src="/Resource/background2.jpg" width="100%" height="400px">
+        <div class="cen">
+            <span>A picture is worth a thousand words...</span></div>
+    </div>
+    <br><br>
+    <div class="container-fluid c2">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Hazelnut_Brownie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Hazelnut Brownie</h4>
+            <h4>(Pack of 4-900)</h4>
+            <center>
+            <a href="hazelnutBrownie.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Chocolate_hazelnut_Babka.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Chelsea Wreath Bread</h4>
+            <h4>(Pack of 4-929)</h4>
+            <center>
+            <a href="chelseaWreathBread.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+            <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+                <img src="/Resource/Cinnamon_Muffin.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Cinanamon Muffin</h4>
+                <h4>(Pack of 4-754)</h4>
+                <center>
+                <a href="cinnamonMuffin.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+                <img src="/Resource/Cowboy_cookies.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Cowboy Cookies</h4>
+                <h4>(Pack of 4-708)</h4>
+                <center>
+                <a href="cowboyCookies.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+    </div>
+
+    <div class="container-fluid c2">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Dark_Chocolate_muffin.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Dark Chocolate Muffin</h4>
+            <h4>(Pack of 4-669)</h4>
+            <center>
+            <a href="darkChocolateMuffin.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/OrangeChocolateBrownie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Brownies</h4>
+            <h4>(Pack of 4-663)</h4>
+            <center>
+            <a href="brownies1.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Pesto_focaccia.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Basil Pesto Focaccia</h4>
+            <h4>(Pack of 4-869)</h4>
+            <center>
+            <a href="basilPestoFocaccia.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Almond_amaretti_cookies.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Almond Amaretti Cookies</h4>
+            <h4>(Pack of 4-1500)</h4>
+            <center>
+            <a href="almondAmarettiCookies.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid c2">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Lemon_cookies.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Lemon Cookies</h4>
+            <h4>(Pack of 4-150)</h4>
+            <center>
+            <a href="lemonCookies.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Dark_Chocolate_Brownie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Dark Chocolate Brownie</h4>
+            <h4>(Pack of 4-500)</h4>
+            <center>
+            <a href="darkChocolateBrownie.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Morning_glory_muffin.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Morning Glory Muffin</h4>
+            <h4>(Pack of 4-300)</h4>
+            <center>
+            <a href="morningGloryMuffin.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Tomato_focaccia.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Tomato Focaccia</h4>
+            <h4>(Pack of 4-963)</h4>
+            <center>
+            <a href="tomatoFocaccia.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid c2">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Blueberry_Muffin.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Vanilla Blueberry Muffin</h4>
+            <h4>(Pack of 4-400)</h4>
+            <center>
+            <a href="vanillaBlueberryMuffin.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Mint_Oreo_Brownie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Mint Oreo Brownie</h4>
+            <h4>(Pack of 4-180)</h4>
+            <center>
+            <a href="mintOreoBrownie.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/strawberry_muffin.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Lemon Strawberry Muffin</h4>
+            <h4>(Pack of 4-350)</h4>
+            <center>
+            <a href="lemonStrawberryMuffin.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/challah_bread.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Challah Bread</h4>
+            <h4>(Pack of 4-200)</h4>
+            <center>
+            <a href="challahBread.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid c2">
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Turkish_pide.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Bread</h4>
+            <h4>(Pack of 4-120)</h4>
+            <center>
+            <a href="bread.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Mocha_Walnut_Brownie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Mocha Walnut Brownie</h4>
+            <h4>(Pack of 4-250)</h4>
+            <center>
+            <a href="mochaWalnutBrownie.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+        <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+            <img src="/Resource/Rose_pistachio_cookie.jpg" class="card-img-top" width="100%" height="200px">
+            <div class="card-body">
+            <h4 class="card-title">Chocolate Chip Cookies</h4>
+            <h4>(Pack of 4-200)</h4>
+            <center>
+            <a href="chocolateChipCookies.html" class="btn btn-info">More Details
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </center>
+            </div>
+        </div>
+            <div class="card col-lg-3 col-md-3 col-sm-6 col-xs-10 c3">
+                <img src="/Resource/Orange_Brownie.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Orange Chocolate Brownie</h4>
+                <h4>(Pack of 4-100)</h4>
+                <center>
+                <a href="orangeChocolateBrownie.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>      
+    </div>
+</body>
+</html>

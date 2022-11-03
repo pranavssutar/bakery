@@ -1,0 +1,75 @@
+.c1{
+    margin-top:70px;
+}
+
+.c2{
+    margin-top:10px;
+}
+
+.c3{
+    border-radius: 20px;
+    margin-left: 0px;
+}
+
+.c3 img{
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.c3 h4{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bolder;
+    color:black;
+}
+
+.c4{
+    background-image: url("/Resource/background2.jpg");
+    background-position: top left;
+    background-repeat: repeat;
+    margin-top:40px;
+}
+
+@media only screen and (max-width:768px){
+    .c1{
+        height: 120px;
+    }
+    .c1 img{
+        width: 50%;
+        margin-left: 25%;
+        height: 100px;
+    }
+    .card-body{
+        margin-left: 10%;
+    }
+    .c3{
+        width: 80% !important;
+        margin-left: 6% !important;
+        margin-top:10px;
+    }
+    .c3 img{
+        margin-left: 15%;
+        width: 80%;
+    }
+    .c1 img{
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .c1{
+        height: 120px;
+    }
+    .c3{
+        width: 80% !important;
+        margin-left: 10%;
+        margin-top:10px;
+    }
+    .c1 img{
+        height: 150px;
+    }
+    .c4{
+        background-color: pink;
+    }
+}

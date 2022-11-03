@@ -1,0 +1,92 @@
+.c1{
+    margin-top:6%;
+}
+
+.c1 img{
+    width: 60%;
+    height: 300px;
+    margin-left: 20%;
+    border-radius: 5px;
+}
+
+.c2{
+    margin-top: 20px;
+    background-image: url("/Resource/background2.jpg");
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+.c3 img{
+    margin-top:2%;
+    width: 80%;
+    border-radius: 25px;
+    margin-left: 8%;
+    padding:5px 5px 5px 5px;
+}
+
+.c4 h1{
+    font-family: cursive;
+    color:brown
+}
+
+.c4 h2{
+    font-family: cursive;
+    text-decoration: underline;
+    color:crimson
+}
+
+.c4 h3{
+    font-family: cursive;
+    text-decoration: underline;
+    color:crimson;
+}
+
+.c4 p{
+    font-family: cursive;
+    color:navy;
+}
+
+.c4 li{
+    font-family: cursive;
+    color:navy;
+    font-weight: 100;
+    background-color: burlywood;
+}
+
+div span{
+    color:navy;
+    font-weight: 100;
+    background-color: burlywood;
+}
+
+@media only screen and (max-width:768px) {
+    .c1 img{
+        height: 200px;
+        margin-top: 5%;
+    }
+    .c3{
+        margin-left: 10%;
+    }
+    .c3 img{
+        margin-left: 10%;
+        height: 300px;
+    }
+    .c4 h1{
+        text-align: center;
+        margin-left: 20% !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .c1{
+        margin-top: 10%;
+    }
+    .c1 img{
+        margin-top: 3%;
+        height: 200px;
+    }
+    .c3 img{
+        width: 90%;
+        margin-left: 5%;
+    }
+}

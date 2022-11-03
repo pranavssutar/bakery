@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="Brownies.css">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand navhead" href="#">
+               Passion Bakery & Cakes &nbsp;
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#shop">Shop<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Brownies.html">BROWINES</a></li>
+                  <li><a href="Breads.html">BREADS</a></li>
+                  <li><a href="Muffins.html">MUFFINS</a></li>
+                  <li><a href="Cookies.html">COOKIES</a></li>
+                </ul>
+              </li>
+              <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <button onclick="document.getElementById('id01').style.display='block'" class="btn navbar-btn btn-success" >Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="#" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="/Resource/BakeryLogo.png" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <br><br>
+            <a class="link">Forgot Password ?</a>
+            <br><br>
+            <button type="submit" id="b" style="background-color: #04AA6D;">Login</button>
+
+            <br>
+            <label id="l">
+              <input type="checkbox" checked="unchecked" name="remember"> Remember me
+            </label>
+            <br>
+            <button type="button" id="b" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+    <div class="container c1">
+        <img src="/Resource/Cowboy_cookies.jpg" height="300px" width="100%" >
+    </div>
+
+    <div class="container-fluid c4" style="background-color: lightgray;">
+        <div class="container-fluid c2">
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10 c3">
+                <img src="/Resource/Almond_amaretti_cookies.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Almond Amaretti Cookies</h4>
+                <h4>(Pack of 4-1500)</h4>
+                <center>
+                <a href="almondAmarettiCookies.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10 c3">
+                <img src="/Resource/Rose_pistachio_cookie.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Chocolate Chip Cookies</h4>
+                <h4>(Pack of 4-200)</h4>
+                <center>
+                <a href="chocolateChipCookies.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10 c3">
+                <img src="/Resource/Lemon_cookies.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Lemon Cookies</h4>
+                <h4>(Pack of 4-150)</h4>
+                <center>
+                <a href="lemonCookies.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+            <div class="card col-lg-3 col-md-3 col-sm-3 col-xs-10 c3">
+                <img src="/Resource/Cowboy_cookies.jpg" class="card-img-top" width="100%" height="200px">
+                <div class="card-body">
+                <h4 class="card-title">Cowboy Cookies</h4>
+                <h4>(Pack of 4-708)</h4>
+                <center>
+                <a href="cowboyCookies.html" class="btn btn-info">More Details
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+.navdemo{
+    height: 80px;
+    width: auto;
+}
+
+
+#c1 {
+    margin-left:220px;
+    margin-top:0px;
+    float:right;
+}
+
+a :hover{
+    background-color: black !important;
+    font-size:20px !important;
+}
+
+.d1{
+    height: 300px !important;
+    width: auto;
+    margin-top:50px;
+    align-items: center;
+}
+
+#myCarousel{
+    border-radius: 20px !important;
+}
+
+.d2{
+    width: 100%;
+    height: auto;
+    padding:2px 2px 2px 2px !important;
+}
+
+
+
+.card h5{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.card-body{
+    height: 80px;
+}
+
+div.card :hover{
+    transform: rotateZ(-10deg);
+}
+
+.d3{
+    height: auto;
+    width: 100%;
+}
+
+.item img{
+    border-radius: 20px;
+}
+
+
+
+.c1{
+    width: 16.5% !important;
+    height: auto;
+    padding:3px 3px 3px 3px;
+    transition-duration: 2s;
+    border-radius: 10px;
+    margin-top:15px;
+    transition-timing-function: linear;
+}
+
+.c1 h5{
+    color:purple;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.c1:hover h5{
+    color:black;
+}
+
+.c1:hover{
+    background-color: brown;
+}
+
+#a1{
+    text-align: center;
+    font-family: cursive;
+    color:white;
+}
+
+#a1 span{
+    background-color:dodgerblue;
+}
+
+.c2 h3{
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.c2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+
+.c2 a{
+    color:#333333 !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+hr{
+    
+    border-top: 5px solid gray;
+}
+
+.link{
+    text-decoration: none;
+    color:gray;
+   
+}
+
+body{
+    background-image: url("/Resource//background2.jpg");
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat:repeat;
+    background-blend-mode:normal;
+}
+
+
+.link :hover{
+    background-color: cyan;
+    text-decoration: none;
+}
+
+
+
+.item p span{
+    color:darkgreen !important;
+    font-weight: bolder !important;
+    font-family: cursive !important;
+   
+}
+
+.item{
+    color:black !important;
+    font-family: cursive;
+    background-color: wheat !important;
+}

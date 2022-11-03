@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+
+</style>
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+.c5{
+  border-radius: 10px;
+  margin-top: 50px;
+  height: auto;
+  width: 500px !important;
+  background-color: aqua;
+
+}
+
+.c6{
+  border-radius: 20px;
+  padding:5px 5px 5px 5px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  height: 500px;
+}
+
+.c6 h4{
+  font-family: cursive;
+  text-align: center;
+}
+
+.c6 img{
+  margin-left: 20%;
+}
+
+#c3{
+  width:180px;
+  height: 30px;
+  color:white;
+  border:none;
+  background-image: linear-gradient(to right,red,purple);
+}
+
+#t1{
+  width: 250px;
+}
+
+#t2{
+  width: 250px;
+}
+.c6 a{
+  text-decoration: none;
+  color:black;
+  font-family: cursive;
+}
+
+#t3{
+  margin-left: 50px;
+}
+
+#t4{
+  margin-left: 80px;
+  width: 120px;
+  height: 80px;
+  text-align: center;
+  color:chocolate;
+  border:4px solid coral;
+  margin-bottom: 30px;
+}
+
+.c6 h2{
+  text-align: center;
+  color:white;
+  font-family: cursive;
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.c6{
+  background-image: linear-gradient(to right,coral,purple);
+  border-radius: 20px;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left:0px;
+  height: 550px;
+}
+
+.c6 p{
+  margin-top: 50px;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+  .c6{
+      height: 530px;
+      margin-left: 40px;
+      margin-top: 30px;
+  }
+  .c6 img{
+      height: 80px;
+  }
+  #t3{
+      margin-left:30%;
+  }
+  #t4{
+      margin-left:35%;
+  }
+  .c6{
+      height: 400px;
+      margin-left: 40px;
+  }
+  
+}
+
+@media only screen and (max-width:767px){
+  .c6 img{
+      height: 150px;
+  }
+  .c6{
+      margin-left: 10%;
+  }
+  #t3{
+      margin-left:30%;
+  }
+  #t4{
+      margin-left:35%;
+  }
+  .c6{
+      margin-left: 10%;
+  }
+}
+
+
+<div id="id1" class="modal">
+  <span onclick="document.getElementById('id1').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action=""> 
+      <div class="container c5">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 c6">
+            <img src="/bakery/Resource/BakeryLogo.png" height="120px" width="60%">
+            <h4>Please Login to Your Account</h4>
+            <center>
+            <input type="text" required class="form-control" id="t1" name="t1" placeholder="Username">
+            <br>
+            <input type="text" class="form-control" required id="t2" name="t2" placeholder="Password">
+            <br>
+            <input type="submit" class="btn" value="Log In" id="c3">
+            <br><br>
+            <a href="#" style="color:gray">Forgot Password</a>
+            </center>
+            <br>
+            <a href="#" id="t3">Don't have an Accout ?</a><br><br>
+            <button type="button" class="btn" id="t4">CREATE NEW</button>
+        
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 c7">
+            <h2>We are more than just a Company</h2>
+            <p>
+                In the world of baking, the magic always starts with one crumb and one flake. The combination of carefully crafted, infinite number of crumbs and flakes, always results in "melt-in-the-mouth delicacies"
+            </p>
+        </div>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id1').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>   
